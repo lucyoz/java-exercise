@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class practice {
+public class MoneyTest {
     public static void main(String[] args) {
         System.out.println("금액을 입력하세요");
         Scanner sc = new Scanner(System.in);
