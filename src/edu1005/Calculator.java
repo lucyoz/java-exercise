@@ -13,7 +13,8 @@ public class Calculator {
         System.out.println(a * b);
     }
     public void divide(int a, int b){
-        System.out.println(a / b);
+        float result = (float) a / (float) b;
+        System.out.println(result);
     }
 
 }
