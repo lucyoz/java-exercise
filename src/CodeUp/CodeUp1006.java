@@ -1,4 +1,4 @@
-package hw1004;
+package CodeUp;
 
 public class CodeUp1006 {
     public static void main(String[] args) {

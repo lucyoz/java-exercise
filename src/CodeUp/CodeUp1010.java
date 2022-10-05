@@ -1,4 +1,4 @@
-package hw1004;
+package CodeUp;
 
 import java.util.Scanner;
 
