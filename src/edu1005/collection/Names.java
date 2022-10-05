@@ -3,8 +3,9 @@ package edu1005.collection;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Name {
+public class Names {
     private List<String> students = new ArrayList<>();
+
 
     public List<String> names(){
         this.students.add("권하준");

@@ -6,7 +6,7 @@ import java.util.List;
 public class LikeLion2th {
     private List<String> students = new ArrayList<>();
     public LikeLion2th(){
-        Name names = new Name();
+        Names names = new Names();
         this.students = names.names();
     }
 

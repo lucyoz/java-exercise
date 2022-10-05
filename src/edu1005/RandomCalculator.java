@@ -29,11 +29,19 @@ public class RandomCalculator implements randomNum{
     }
     public void divide(){
         System.out.println("나누기 연산");
-        try{
-            System.out.println((float)a/ random());
-        } catch (Exception e){
-            e.printStackTrace();
+        int randomInt = random();
+        if(randomInt == 0){
+            throw new IllegalArgumentException("/ by 0");
+        } else{
+            float result = (float) a / randomInt;
+            System.out.println(result);
         }
+
+//        try{
+//            System.out.println((float)a/ random());
+//        } catch (Exception e){
+//            e.printStackTrace();
+//        }
 
 
     }
