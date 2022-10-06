@@ -8,8 +8,8 @@ public class RndNumbersWithoutDuplicated {
         RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
         Set<Integer> set1 = new HashSet<>();
 
-        for(int i=0;i<50;i++) {
-            int r = randomNumberGenerator.generate(10);
+        for(int i=0;i<100;i++) {
+            int r = randomNumberGenerator.generate(20);
             //System.out.println(r);
             set1.add(r);
         }
