@@ -14,4 +14,8 @@ public class LikeLion2th {
     public List<String> getStudentList(){
         return this.students;
     }
+
+    //public List<Student> getStudentObjs(){
+        //return this.students;
+    //}
 }
