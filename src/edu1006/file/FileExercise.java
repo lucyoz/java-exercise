@@ -1,11 +1,13 @@
 package edu1006.file;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class FileExercise {
+
+    private String filename;
+    public FileExercise(String filename){
+        this.filename = filename;
+    }
     public void printFiles(){
         File dir = new File("./");
         File files[] = dir.listFiles();
@@ -14,12 +16,12 @@ public class FileExercise {
             System.out.println(file);
         }
     }
-    public char readAChar(String filename) throws IOException {
+    public char readAChar() throws IOException {
         FileReader fileReader = new FileReader(filename);
         return (char)fileReader.read();
     }
 
-    public String read2Chars(String filename) throws IOException{
+    public String read2Chars() throws IOException{
         FileReader fileReader = new FileReader(filename);
         String str = "";
         str += (char) fileReader.read();
@@ -27,7 +29,7 @@ public class FileExercise {
         return str;
     }
 
-    public String readNChars(String filename, int N) throws IOException{
+    public String readNChars(int N) throws IOException{
         FileReader fileReader = new FileReader(filename);
         String str = "";
         for(int i=0;i<N;i++){
@@ -36,17 +38,44 @@ public class FileExercise {
         return str;
     }
 
+    public String readALine() throws IOException {
+        BufferedReader br = new BufferedReader(
+                new FileReader(filename), 16*1024
+        );
+        String line;
+        line = br.readLine();
+
+        return line;
+    }
+
+    public String readNLine(int N) throws IOException{
+        BufferedReader br = new BufferedReader(
+                new FileReader(filename), 16*1024
+        );
+        String line = "";
+        for(int i=0;i<N;i++){
+            line = br.readLine()+"\n";
+        }
+        return line;
+    }
+
     public static void main(String[] args) throws IOException {
         // ./는 현재 디렉토리
 
-        FileExercise fileExercise = new FileExercise();
-        char c = fileExercise.readAChar("./a_file.txt");
+        FileExercise fileExercise = new FileExercise("./a_file.txt");
+        char c = fileExercise.readAChar();
         System.out.println(c);
 
-        String str = fileExercise.read2Chars("./a_file.txt");
+        String str = fileExercise.read2Chars();
         System.out.println(str);
 
-        str = fileExercise.readNChars("./a_file.txt", 5);
+        str = fileExercise.readNChars( 5);
+        System.out.println(str);
+
+        str = fileExercise.readALine();
+        System.out.println(str);
+
+        str = fileExercise.readNLine(2);
         System.out.println(str);
         /*
         h
