@@ -53,11 +53,12 @@ public class PopulationStatistics {
     public PopulationMove parse(String data){
         String[] dataArr = data.split(",");
         int fromSido = Integer.parseInt(dataArr[0]);
-        int toSido = Integer.parseInt(dataArr[5]);
+        int toSido = Integer.parseInt(dataArr[6]);
 
         return new PopulationMove(fromSido, toSido);
 
     }
+
 
     public static void main(String[] args) throws IOException {
         String address = "D:\\Lion\\2021_인구관련연간자료_20221006_02584.csv";
