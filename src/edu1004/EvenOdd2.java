@@ -1,3 +1,5 @@
+package edu1004;
+
 import java.util.Scanner;
 
 public class EvenOdd2 {

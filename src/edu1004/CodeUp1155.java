@@ -1,3 +1,5 @@
+package edu1004;
+
 public class CodeUp1155 {
     private int multipleTargetNum = 2;
     public CodeUp1155(){

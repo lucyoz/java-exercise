@@ -1,3 +1,5 @@
+package edu1004;
+
 public class CureencyCnt {
     public static void main(String[] args) {
         int curr50000 = 50000;

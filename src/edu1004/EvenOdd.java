@@ -1,4 +1,4 @@
-//CodeUp 1156: 홀수와 짝수 구별
+package edu1004;//CodeUp 1156: 홀수와 짝수 구별
 
 import java.util.Scanner;
 
