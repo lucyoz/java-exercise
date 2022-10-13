@@ -2,7 +2,7 @@ package edu1013;
 
 import java.util.Arrays;
 
-public class SelectionSort01 {
+public class BubbleSort01 {
     //가장 작은 숫자를 0번째에
     public int[] sort1(int[] arr){
         for(int i=0;i<arr.length-1;i++) {
@@ -20,7 +20,7 @@ public class SelectionSort01 {
     public static void main(String[] args) {
         int[] arr = new int[]{7, 2, 3, 9, 28, 11};
 
-        SelectionSort01 selectionSort01 = new SelectionSort01();
+        BubbleSort01 selectionSort01 = new BubbleSort01();
         int[] result = selectionSort01.sort1(arr);
 
         System.out.println(Arrays.toString(result));
