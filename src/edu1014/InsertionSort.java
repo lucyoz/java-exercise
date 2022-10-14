@@ -6,6 +6,7 @@ public class InsertionSort {
     public int[] sort(int[] arr){
         int i, j;
 
+
         for(i=1;i<arr.length;i++){
             int value = arr[i];
             for(j=i-1;j>=0&&arr[j]>value;j--){
